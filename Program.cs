@@ -71,17 +71,18 @@ builder.Services.AddScoped<OrderManager>();
 builder.Services.AddScoped<PaymentFactoryManager>();
 builder.Services.AddScoped<AuthenticationManager>();
 builder.Services.AddScoped<AdvertManager>();
-
+builder.Services.AddScoped<AdminManager>();
 
 //Registering Services (Repositories)
 //builder.Services.AddScoped<IInventoryManagement, InventoryManagement>();
+
+builder.Services.AddScoped<IAdminManagement, AdminManagement>();
 builder.Services.AddScoped<IOrderManagement, OrderManagement>();
 builder.Services.AddScoped<IInventoryManagement, InventoryManagement>();
 builder.Services.AddScoped<IAuthenticationManagement, AuthenticationManagement>();
 builder.Services.AddScoped<IPaymentFactoryManagement, PaymentFactoryManagement>();
-builder.Services.AddScoped<IAdvertManagement, AdvertManagement>();
-
-
+builder.Services.AddScoped<IAdvertManagement, AdvertManagement>(); 
+//--------------------------------------------------------------------------
 builder.Services.AddScoped<IPaymentManagement, CyberPayProcessor>();
 builder.Services.AddScoped<IPaymentManagement, FlutterwaveProcessor>();
 builder.Services.AddScoped<IPaymentManagement, PaystackProcessor>();

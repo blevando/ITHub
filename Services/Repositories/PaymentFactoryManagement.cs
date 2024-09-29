@@ -54,5 +54,9 @@ namespace ITHub.Services.Repositories
             return await Task.FromResult(response);
         }
 
+        public Task<Response> RequeryPaymentAsync(string paymentReference)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

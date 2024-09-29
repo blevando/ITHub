@@ -7,5 +7,7 @@ namespace ITHub.Services.Interfaces
     {
 
         Task<Response> InitiatePaymentAsync(string processorType, PaymentRequestDto model);
+        Task<Response> RequeryPaymentAsync(string paymentReference);
+        
     }
 }

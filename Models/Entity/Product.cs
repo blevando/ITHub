@@ -1,4 +1,6 @@
-﻿namespace ITHub.Models.Entity
+﻿using System.ComponentModel.DataAnnotations.Schema;
+
+namespace ITHub.Models.Entity
 {
     public class Product
     {
@@ -15,12 +17,14 @@
         public string? BenefitSummary { get; set; }
         public List<Benefit>? Benefits { get; set; }
         public int Stock { get; set; }
+
+        [Column(TypeName = "decimal(18,2)")]
         public decimal Price { get; set; }
         public bool IsPublished { get; set; }
         public List<ActionType>? ActionTypes { get; set; }
         public string? CreatedBy { get; set; }
         public DateTime CreatedDate { get; set; }
-        public string? Vendor { get; set; } // Come back to modify
+        public string? VendorNumber { get; set; } // Come back to modify
          
     }
 }
