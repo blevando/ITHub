@@ -1,11 +1,7 @@
-﻿namespace ITHub.Models.Entity
+﻿namespace ITHub.Models.Dto
 {
-    
     public class Benefit
     {
-        public int Id { get; set; }
-
-        /// FK -> Product
         public string? ProductNumber { get; set; }
 
         public string? BenefitName { get; set; }
@@ -13,7 +9,5 @@
 
         public bool Status { get; set; }
 
-
     }
-
 }

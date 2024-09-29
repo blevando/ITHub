@@ -5,7 +5,7 @@ namespace ITHub.Services.Interfaces
 {
     public interface IPaymentManagement
     {               
-        Task<Response> ProcessPaymentAsync(string processorType, PaymentRequestDto model, PaymentConfigDto config);
+        Task<Response> ProcessPaymentAsync(string processorType, PaymentRequestDto model, PaymentGatewayConfigDto config);
 
        
     }

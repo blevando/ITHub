@@ -15,7 +15,7 @@ namespace ITHub.Services.Repositories
         {
 
         }
-        public async Task<Response> ProcessPaymentAsync(string processorType, PaymentRequestDto model, PaymentConfigDto config)
+        public async Task<Response> ProcessPaymentAsync(string processorType, PaymentRequestDto model, PaymentGatewayConfigDto config)
         {
             Response response = new Response();
 

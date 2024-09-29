@@ -5,7 +5,7 @@ namespace ITHub.Services.Repositories
 {
     public class PaystackProcessor : IPaymentManagement
     {
-        public async Task<Response> ProcessPaymentAsync(string processorType, PaymentRequestDto model, PaymentConfigDto config)
+        public async Task<Response> ProcessPaymentAsync(string processorType, PaymentRequestDto model, PaymentGatewayConfigDto config)
         {
 
             Response response = new Response();

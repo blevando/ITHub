@@ -10,18 +10,16 @@ namespace ITHub.Models.Dto
         public ShipmentType ShipmentType { get; set; } // Email, Phone, Location = prices in ShipmentConfig Table
 
         public string? Destination { get; set; }
-
-        [Column(TypeName = "decimal(18,4)")]
-        public decimal Price { get; set; }
         public string? FulfilledBy { get; set; }
         public string? ShippedDate { get; set; }
-
         public string? DeliveryDate { get; set; }
         public string? POD { get; set; } // Proof of Delivery
         public string? ReceivedBy { get; set; }
-
+        [Column(TypeName = "decimal(18,2)")]
+        public decimal Amount { get; set; }
         public ShipmentStatus ShipmentStatus { get; set; }
-
+        public string? Courier { get; set; }
+        public string? TrackingNumber { get; set; }
         public string? Remark { get; set; }
 
     }

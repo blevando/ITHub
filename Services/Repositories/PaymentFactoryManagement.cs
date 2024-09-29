@@ -23,7 +23,7 @@ namespace ITHub.Services.Repositories
 
             if (paymentConfig != null)
             {
-                PaymentConfigDto config = new PaymentConfigDto();
+                PaymentGatewayConfigDto config = new PaymentGatewayConfigDto();
                 config.Apikey = paymentConfig.Apikey;
                 config.ApiSecret = paymentConfig.ApiSecret;
                 config.GatewayUrl = paymentConfig.GatewayUrl;
