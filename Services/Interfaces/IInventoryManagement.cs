@@ -15,8 +15,8 @@ namespace ITHub.Services.Interfaces
         //Product
         Task<Response> GetAllProductAsync();
         Task<Response> GetProductByProductNumberAsync(int Id);
-        Task<Response> CreateProductAsync(Commodity model);
-        Task<Response> UpdateProductAsync(Commodity model, int Id);
+        Task<Response> CreateProductAsync(ProductDto model);
+        Task<Response> UpdateProductAsync(ProductDto model, int Id);
         Task<Response> DeleteProductAsync(int Id);
 
         

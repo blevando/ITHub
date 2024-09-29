@@ -18,6 +18,8 @@ namespace ITHub.Models.Entity
         [Column(TypeName = "decimal(18,2)")]
         public decimal Amount { get; set; }
         public ShipmentStatus ShipmentStatus { get; set; }
+        public string? Courier { get; set; }
+        public string? TrackingNumber { get; set; }
         public string? Remark { get; set; }
 
     }

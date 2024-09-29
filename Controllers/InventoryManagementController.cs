@@ -26,7 +26,7 @@ namespace ITHub.Controllers
         }
         [HttpPost]
         [Route("CreateProduct")]
-        public Task<Response> CreateProductAsync(Commodity model)
+        public Task<Response> CreateProductAsync(ProductDto model)
         {
             throw new NotImplementedException();
         }

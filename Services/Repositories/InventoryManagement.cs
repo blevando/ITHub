@@ -20,7 +20,7 @@ namespace ITHub.Services.Repositories
             throw new NotImplementedException();
         }
 
-        public Task<Response> CreateProductAsync(Commodity model)
+        public Task<Response> CreateProductAsync(ProductDto model)
         {
             throw new NotImplementedException();
         }
@@ -70,7 +70,7 @@ namespace ITHub.Services.Repositories
             throw new NotImplementedException();
         }
 
-        public Task<Response> UpdateProductAsync(Commodity model, int Id)
+        public Task<Response> UpdateProductAsync(ProductDto model, int Id)
         {
             throw new NotImplementedException();
         }

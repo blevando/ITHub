@@ -19,7 +19,7 @@ namespace ITHub.Managers
             return await _order.CreateCategoryAsync(model);
         }
 
-        public async Task<Response> CreateProductAsync(Commodity model)
+        public async Task<Response> CreateProductAsync(ProductDto model)
         {
            return await _order.CreateProductAsync(model);
         }
@@ -69,7 +69,7 @@ namespace ITHub.Managers
             throw new NotImplementedException();
         }
 
-        public Task<Response> UpdateProductAsync(Commodity model, int Id)
+        public Task<Response> UpdateProductAsync(ProductDto model, int Id)
         {
             throw new NotImplementedException();
         }
